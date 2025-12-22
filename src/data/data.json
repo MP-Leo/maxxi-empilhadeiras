@@ -1,0 +1,149 @@
+{
+  "contato": {
+    "nome": "Nome Empresa",
+    "slogan": "Slogan ou descricao generica",
+    "whatsapp": "5554999008508",
+    "telefone": "(11) 99999-9999",
+    "email": "contato@email.com",
+    "instagram": "@instagram",
+    "endereco": "Rodovia BR-153, Km 42 - Ribeirão Preto/SP"
+  },
+  "categorias": ["Todos", "Tratores", "Colheitadeiras", "Implementos", "Pulverizadores"],
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Trator Agrícola 4x4 - 85cv",
+      "descricao": "Trator versátil para pequenas e médias propriedades. Motor diesel econômico, cabine aberta, direção hidrostática.",
+      "preco": 185000,
+      "categoria": "Tratores",
+      "ano": 2022,
+      "imagem": "https://images.unsplash.com/photo-1530267981375-f0de937f5f13?w=600"
+    },
+    {
+      "id": 2,
+      "nome": "Trator Agrícola 4x4 - 120cv",
+      "descricao": "Potência para operações exigentes. Cabine climatizada, transmissão sincronizada, tomada de força independente.",
+      "preco": 275000,
+      "categoria": "Tratores",
+      "ano": 2021,
+      "imagem": "https://images.unsplash.com/photo-1530267981375-f0de937f5f13?w=600"
+    },
+    {
+      "id": 3,
+      "nome": "Trator Agrícola 4x4 - 180cv",
+      "descricao": "Alta performance para grandes áreas. Motor turbo, cabine com suspensão, piloto automático opcional.",
+      "preco": 420000,
+      "categoria": "Tratores",
+      "ano": 2023,
+      "imagem": "https://images.unsplash.com/photo-1530267981375-f0de937f5f13?w=600"
+    },
+    {
+      "id": 4,
+      "nome": "Trator Compacto 50cv",
+      "descricao": "Perfeito para pomares e áreas confinadas. Dimensões reduzidas, alta manobrabilidade.",
+      "preco": 95000,
+      "categoria": "Tratores",
+      "ano": 2022,
+      "imagem": "https://images.unsplash.com/photo-1530267981375-f0de937f5f13?w=600"
+    },
+    {
+      "id": 5,
+      "nome": "Colheitadeira de Grãos - Média",
+      "descricao": "Ideal para soja, milho e trigo. Plataforma de 25 pés, tanque graneleiro de 8.000L, monitor de rendimento.",
+      "preco": 890000,
+      "categoria": "Colheitadeiras",
+      "ano": 2020,
+      "imagem": "https://images.unsplash.com/photo-1530267981375-f0de937f5f13?w=600"
+    },
+    {
+      "id": 6,
+      "nome": "Colheitadeira de Grãos - Grande",
+      "descricao": "Máxima produtividade. Plataforma de 35 pés, sistema de trilha axial, GPS integrado, tanque de 12.000L.",
+      "preco": 1450000,
+      "categoria": "Colheitadeiras",
+      "ano": 2022,
+      "imagem": "https://images.unsplash.com/photo-1530267981375-f0de937f5f13?w=600"
+    },
+    {
+      "id": 7,
+      "nome": "Colheitadeira de Cana",
+      "descricao": "Equipamento robusto para colheita mecanizada de cana-de-açúcar. Corte de base flutuante.",
+      "preco": 1200000,
+      "categoria": "Colheitadeiras",
+      "ano": 2021,
+      "imagem": "https://images.unsplash.com/photo-1530267981375-f0de937f5f13?w=600"
+    },
+    {
+      "id": 8,
+      "nome": "Grade Aradora 16 Discos",
+      "descricao": "Discos de 26 polegadas, mancais com rolamentos blindados, estrutura reforçada em aço SAE 1045.",
+      "preco": 28000,
+      "categoria": "Implementos",
+      "ano": 2023,
+      "imagem": "https://images.unsplash.com/photo-1530267981375-f0de937f5f13?w=600"
+    },
+    {
+      "id": 9,
+      "nome": "Grade Niveladora 32 Discos",
+      "descricao": "Para nivelamento e destorroamento do solo. Discos recortados de 22 polegadas.",
+      "preco": 35000,
+      "categoria": "Implementos",
+      "ano": 2023,
+      "imagem": "https://images.unsplash.com/photo-1530267981375-f0de937f5f13?w=600"
+    },
+    {
+      "id": 10,
+      "nome": "Plantadeira 12 Linhas",
+      "descricao": "Plantio de precisão para soja e milho. Dosadores pneumáticos, marcador de linha hidráulico.",
+      "preco": 195000,
+      "categoria": "Implementos",
+      "ano": 2022,
+      "imagem": "https://images.unsplash.com/photo-1530267981375-f0de937f5f13?w=600"
+    },
+    {
+      "id": 11,
+      "nome": "Plantadeira 24 Linhas",
+      "descricao": "Alta capacidade operacional. Sistema de distribuição a vácuo, monitor de sementes por linha.",
+      "preco": 380000,
+      "categoria": "Implementos",
+      "ano": 2023,
+      "imagem": "https://images.unsplash.com/photo-1530267981375-f0de937f5f13?w=600"
+    },
+    {
+      "id": 12,
+      "nome": "Pulverizador Autopropelido 2500L",
+      "descricao": "Barras de 24 metros, bomba de diafragma, comandos eletrônicos, GPS para aplicação em taxa variável.",
+      "preco": 480000,
+      "categoria": "Pulverizadores",
+      "ano": 2021,
+      "imagem": "https://images.unsplash.com/photo-1530267981375-f0de937f5f13?w=600"
+    },
+    {
+      "id": 13,
+      "nome": "Pulverizador Autopropelido 3500L",
+      "descricao": "Barras de 32 metros, sistema de autoalinhamento, piloto automático, cabine pressurizada.",
+      "preco": 720000,
+      "categoria": "Pulverizadores",
+      "ano": 2022,
+      "imagem": "https://images.unsplash.com/photo-1530267981375-f0de937f5f13?w=600"
+    },
+    {
+      "id": 14,
+      "nome": "Pulverizador de Arrasto 600L",
+      "descricao": "Compacto e eficiente. Ideal para pequenas propriedades e aplicações localizadas.",
+      "preco": 18000,
+      "categoria": "Pulverizadores",
+      "ano": 2023,
+      "imagem": "https://images.unsplash.com/photo-1530267981375-f0de937f5f13?w=600"
+    },
+    {
+      "id": 15,
+      "nome": "Subsolador 5 Hastes",
+      "descricao": "Descompactação profunda do solo. Hastes parabólicas, ponteiras intercambiáveis.",
+      "preco": 32000,
+      "categoria": "Implementos",
+      "ano": 2022,
+      "imagem": "https://images.unsplash.com/photo-1530267981375-f0de937f5f13?w=600"
+    }
+  ]
+}

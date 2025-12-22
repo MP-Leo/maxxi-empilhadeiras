@@ -1,0 +1,127 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.modal-conteudo {
+  background-color: var(--cor-card);
+  border-radius: 16px;
+  max-width: 700px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-fechar {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--cor-card);
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--cor-texto);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+  z-index: 10;
+}
+
+.modal-fechar:hover {
+  background-color: var(--cor-fundo);
+}
+
+.modal-imagem {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.modal-info {
+  padding: 1.5rem;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.modal-header h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--cor-texto);
+}
+
+.modal-preco {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--cor-primaria);
+  white-space: nowrap;
+}
+
+.modal-categoria {
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.75rem;
+  background-color: var(--cor-fundo);
+  border-radius: 6px;
+  color: var(--cor-texto-claro);
+  margin-bottom: 1rem;
+}
+
+.modal-descricao {
+  font-size: 1rem;
+  color: var(--cor-texto-claro);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.modal-detalhes {
+  font-size: 0.9rem;
+  color: var(--cor-texto-claro);
+  margin-bottom: 1.5rem;
+}
+
+.modal-btn-whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: fit-content;
+  padding: 0.85rem 2.5rem;
+  margin: 0 auto;
+  background-color: var(--cor-whatsapp);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.modal-btn-whatsapp:hover {
+  background-color: #1ebe5d;
+}
+
+.modal-btn-whatsapp svg {
+  width: 22px;
+  height: 22px;
+}
