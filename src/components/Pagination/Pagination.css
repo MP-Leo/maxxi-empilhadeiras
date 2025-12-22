@@ -1,36 +1,46 @@
+/* ===================================
+   PAGINAÇÃO
+   =================================== */
+
 .paginacao {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.35rem;
   margin-top: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .paginacao-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
-  border: 1px solid var(--cor-borda);
+  border: none;
   border-radius: 8px;
-  background-color: var(--cor-card);
+  background-color: transparent;
   cursor: pointer;
-  font-size: 0.95rem;
-  font-family: inherit;
-  color: var(--cor-texto);
+  font-size: 0.9rem;
+  font-family: var(--fonte-principal);
+  font-weight: 500;
+  color: var(--cor-texto-claro);
   transition: all 0.2s;
 }
 
-.paginacao-btn:hover:not(:disabled) {
-  border-color: var(--cor-primaria);
-  color: var(--cor-primaria);
-}
-
 .paginacao-btn.ativo {
-  background-color: var(--cor-primaria);
-  border-color: var(--cor-primaria);
-  color: white;
+  color: var(--fonte-principal);
+  background-color: rgba(27, 27, 27, 0.1);
+  font-weight: 600;
 }
 
 .paginacao-btn:disabled {
-  opacity: 0.4;
+  opacity: 0.3;
   cursor: not-allowed;
+}
+
+/* Setas de navegação */
+.paginacao-btn:first-child,
+.paginacao-btn:last-child {
+  font-size: 1.1rem;
 }

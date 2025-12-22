@@ -3,7 +3,7 @@ import { useState, useMemo } from 'react'
 export function useProducts(produtos, itensPorPagina = 8) {
   // Estados para filtros
   const [busca, setBusca] = useState('')
-  const [categoriaAtiva, setCategoriaAtiva] = useState('Todos')
+  const [categoriaAtiva, setCategoriaAtiva] = useState('Todas')
   const [ordenacao, setOrdenacao] = useState('padrao')
   
   // Estado para paginação
@@ -15,7 +15,7 @@ export function useProducts(produtos, itensPorPagina = 8) {
       .filter(produto => {
         const matchBusca = produto.nome.toLowerCase().includes(busca.toLowerCase()) ||
                            produto.descricao.toLowerCase().includes(busca.toLowerCase())
-        const matchCategoria = categoriaAtiva === 'Todos' || produto.categoria === categoriaAtiva
+        const matchCategoria = categoriaAtiva === 'Todas' || produto.categoria === categoriaAtiva
         return matchBusca && matchCategoria
       })
       .sort((a, b) => {

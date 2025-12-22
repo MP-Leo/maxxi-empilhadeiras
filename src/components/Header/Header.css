@@ -1,102 +1,152 @@
+/* ===================================
+   HEADER
+   =================================== */
+
 .header {
   background-color: var(--cor-card);
-  padding: 1rem 0;
+  padding: 0;
   position: sticky;
   top: 0;
   z-index: 100;
-  border-bottom: 1px solid var(--cor-borda);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .header-container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.header-topo {
+  padding: 0.8rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
 }
 
-.header-logo h1 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--cor-texto);
-  margin-bottom: 0.1rem;
-}
+/* ===================================
+   LOGO
+   =================================== */
 
-.header-logo span {
-  font-size: 0.85rem;
-  color: var(--cor-texto-claro);
-}
-
-.header-filtros {
+.header-logo {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  flex-wrap: wrap;
+  text-decoration: none;
 }
 
-.filtro-busca {
-  padding: 0.55rem 1rem;
-  border: 1px solid var(--cor-borda);
-  border-radius: 6px;
-  font-size: 0.9rem;
-  font-family: inherit;
-  width: 200px;
-  outline: none;
-  transition: border-color 0.2s;
-  background-color: var(--cor-fundo);
+.logo-icon {
+  font-size: 1.8rem;
 }
 
-.filtro-busca:focus {
-  border-color: var(--cor-primaria);
-}
-
-.filtro-busca::placeholder {
-  color: #999;
-}
-
-.filtro-categorias {
+.logo-text {
   display: flex;
-  gap: 0.35rem;
+  flex-direction: column;
 }
 
-.filtro-categoria-btn {
-  padding: 0.5rem 0.9rem;
-  border: 1px solid var(--cor-borda);
-  border-radius: 6px;
-  background-color: var(--cor-fundo);
-  cursor: pointer;
-  font-size: 0.85rem;
-  font-family: inherit;
+.logo-text h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--cor-texto);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  transition: color 0.2s;
+}
+
+.logo-slogan {
+  font-size: 0.7rem;
+  color: var(--cor-texto-claro);
+  font-weight: 400;
+}
+
+.header-logo:hover .logo-text h1 {
+  color: var(--cor-primaria);
+}
+
+/* ===================================
+   NAVEGAÇÃO
+   =================================== */
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  color: var(--cor-texto-claro);
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 8px;
   transition: all 0.2s;
+  background-color: transparent;
 }
 
-.filtro-categoria-btn:hover {
-  border-color: var(--cor-texto-claro);
+.nav-link svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
 }
 
-.filtro-categoria-btn.ativo {
-  background-color: var(--cor-primaria);
-  color: white;
-  border-color: var(--cor-primaria);
-}
-
-.filtro-ordenacao {
-  padding: 0.55rem 0.8rem;
-  border: 1px solid var(--cor-borda);
-  border-radius: 6px;
-  font-size: 0.85rem;
-  font-family: inherit;
+.nav-link:hover {
+  color: var(--cor-texto);
   background-color: var(--cor-fundo);
-  cursor: pointer;
-  outline: none;
-  min-width: 150px;
 }
 
-.filtro-ordenacao:focus {
-  border-color: var(--cor-primaria);
+.nav-link.ativo {
+  color: var(--cor-primaria);
+  background-color: rgba(212, 160, 23, 0.1);
+}
+
+/* ===================================
+   BOTÃO WHATSAPP NO HEADER
+   =================================== */
+
+.nav-whatsapp {
+  color: var(--cor-whatsapp);
+  background-color: rgba(37, 211, 102, 0.1);
+  margin-left: 0.5rem;
+}
+
+.nav-whatsapp:hover {
+  color: white;
+  background-color: var(--cor-whatsapp);
+}
+
+.nav-whatsapp svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ===================================
+   RESPONSIVIDADE
+   =================================== */
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0.7rem 1rem;
+  }
+
+  .logo-text h1 {
+    font-size: 1rem;
+  }
+
+  .logo-slogan {
+    display: none;
+  }
+
+  .nav-link {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  .nav-link span {
+    display: none;
+  }
+
+  .nav-link svg {
+    width: 20px;
+    height: 20px;
+  }
 }

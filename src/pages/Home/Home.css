@@ -1,0 +1,178 @@
+/* ===================================
+   HOME - HERO
+   =================================== */
+
+.hero {
+  padding: 5rem 2rem;
+  text-align: center;
+  background-color: var(--cor-card);
+}
+
+.hero-content {
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.hero-subtitulo {
+  font-size: 0.95rem;
+  color: var(--cor-texto-claro);
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--cor-texto);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.03em;
+}
+
+.hero-slogan {
+  font-size: 1.15rem;
+  color: var(--cor-primaria);
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.hero-descricao {
+  margin-bottom: 2.5rem;
+}
+
+.hero-descricao p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--cor-texto-claro);
+}
+
+.btn-whatsapp-hero {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1.8rem;
+  background-color: var(--cor-whatsapp);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+}
+
+.btn-whatsapp-hero:hover {
+  background-color: #1fb855;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+.btn-whatsapp-hero svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ===================================
+   HOME - SOBRE
+   =================================== */
+
+.sobre {
+  padding: 4rem 2rem;
+  background-color: var(--cor-fundo);
+}
+
+.sobre-container {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sobre h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+  color: var(--cor-texto);
+  letter-spacing: -0.02em;
+}
+
+.sobre p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--cor-texto-claro);
+  margin-bottom: 1rem;
+}
+
+.sobre p:last-child {
+  margin-bottom: 0;
+}
+
+/* ===================================
+   HOME - INFO
+   =================================== */
+
+.info {
+  padding: 4rem 2rem;
+  background-color: var(--cor-card);
+}
+
+.info-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.info-card {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.info-icon {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.info-card h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--cor-texto);
+  margin-bottom: 0.4rem;
+}
+
+.info-card p {
+  font-size: 0.9rem;
+  color: var(--cor-texto-claro);
+  line-height: 1.5;
+}
+
+/* ===================================
+   RESPONSIVIDADE
+   =================================== */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-slogan {
+    font-size: 1.05rem;
+  }
+
+  .sobre, .info {
+    padding: 3rem 1.5rem;
+  }
+
+  .info-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .info-card {
+    padding: 1rem;
+  }
+}

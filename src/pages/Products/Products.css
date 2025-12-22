@@ -1,0 +1,149 @@
+/* ===================================
+   PRODUCTS PAGE
+   =================================== */
+
+.products-page {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===================================
+   FILTROS BAR
+   =================================== */
+
+.products-filtros-bar {
+  background-color: var(--cor-card);
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.products-filtros-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* ===================================
+   INPUT DE BUSCA
+   =================================== */
+
+.filtro-busca {
+  padding: 0.6rem 1rem;
+  width: 220px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-family: var(--fonte-principal);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  transition: all 0.2s;
+  outline: none;
+}
+
+.filtro-busca:focus {
+  background-color: rgba(212, 160, 23, 0.1);
+  box-shadow: 0 0 0 2px rgba(212, 160, 23, 0.2);
+}
+
+.filtro-busca::placeholder {
+  color: var(--cor-texto-claro);
+}
+
+/* ===================================
+   BOTÕES DE CATEGORIA
+   =================================== */
+
+.filtro-categorias {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.filtro-categoria-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  font-family: var(--fonte-principal);
+  color: var(--cor-texto-claro);
+  transition: all 0.2s;
+}
+
+.filtro-categoria-btn:hover {
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+}
+
+.filtro-categoria-btn.ativo {
+  color: var(--cor-primaria);
+  background-color: rgba(212, 160, 23, 0.1);
+}
+
+/* ===================================
+   SELECT DE ORDENAÇÃO
+   =================================== */
+
+.filtro-ordenacao {
+  padding: 0.6rem 1rem;
+  min-width: 160px;
+  margin-left: auto;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  font-family: var(--fonte-principal);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b6b6b' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  padding-right: 2.5rem;
+}
+
+.filtro-ordenacao:hover {
+  color: var(--cor-texto);
+  background-color: #eeebe5;
+}
+
+.filtro-ordenacao:focus {
+  background-color: rgba(27, 27, 27, 0.1);
+  color: var(--cor-texto);
+}
+
+/* ===================================
+   RESPONSIVIDADE
+   =================================== */
+
+@media (max-width: 768px) {
+  .products-filtros-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .filtro-busca {
+    width: 100%;
+  }
+
+  .filtro-categorias {
+    flex-wrap: wrap;
+  }
+
+  .filtro-ordenacao {
+    width: 100%;
+    margin-left: 0;
+  }
+}
