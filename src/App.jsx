@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { useState } from 'react'
 import data from './data/data.json'
 
 import Header from './components/Header/Header'
@@ -11,35 +11,35 @@ import './styles/global.css'
 
 function App() {
   const { contato, categorias, produtos } = data
+  
+  // Estado para controlar a página atual
+  const [paginaAtual, setPaginaAtual] = useState('home')
 
   return (
-    <BrowserRouter>
-      <div className="app">
-        <Header contato={contato} />
+    <div className="app">
+      <Header 
+        contato={contato} 
+        paginaAtual={paginaAtual}
+        onNavigate={setPaginaAtual}
+      />
 
-        <main className="main-content">
-          <Routes>
-            <Route 
-              path="/" 
-              element={<Home contato={contato} />} 
-            />
-            <Route 
-              path="/produtos" 
-              element={
-                <Products 
-                  contato={contato} 
-                  categorias={categorias} 
-                  produtos={produtos} 
-                />
-              } 
-            />
-          </Routes>
-        </main>
+      <main className="main-content">
+        {paginaAtual === 'home' && (
+          <Home contato={contato} />
+        )}
+        
+        {paginaAtual === 'produtos' && (
+          <Products 
+            contato={contato} 
+            categorias={categorias} 
+            produtos={produtos} 
+          />
+        )}
+      </main>
 
-        <Footer contato={contato} />
-        <WhatsAppButton whatsapp={contato.whatsapp} />
-      </div>
-    </BrowserRouter>
+      <Footer contato={contato} />
+      <WhatsAppButton whatsapp={contato.whatsapp} />
+    </div>
   )
 }
 

@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react'
 
-export function useProducts(produtos, itensPorPagina = 8) {
+export function useProducts(produtos, itensPorPagina = 9) {
   // Estados para filtros
   const [busca, setBusca] = useState('')
   const [categoriaAtiva, setCategoriaAtiva] = useState('Todas')

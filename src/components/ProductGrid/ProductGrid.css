@@ -1,12 +1,12 @@
 .produtos-container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2.5rem 0;
+  padding: 2rem 1.5rem;
   flex-grow: 1;
 }
 
 .produtos-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }

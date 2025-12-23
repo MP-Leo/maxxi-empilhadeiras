@@ -28,7 +28,10 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
 
 .logo-icon {
@@ -38,6 +41,7 @@
 .logo-text {
   display: flex;
   flex-direction: column;
+  text-align: left;
 }
 
 .logo-text h1 {
@@ -56,7 +60,7 @@
 }
 
 .header-logo:hover .logo-text h1 {
-  color: var(--cor-primaria);
+  color: var(--cor-primaria-escura);
 }
 
 /* ===================================
@@ -81,6 +85,9 @@
   border-radius: 8px;
   transition: all 0.2s;
   background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: var(--fonte-principal);
 }
 
 .nav-link svg {
@@ -95,7 +102,7 @@
 }
 
 .nav-link.ativo {
-  color: var(--cor-primaria);
+  color: var(--cor-primaria-escura);
   background-color: rgba(212, 160, 23, 0.1);
 }
 

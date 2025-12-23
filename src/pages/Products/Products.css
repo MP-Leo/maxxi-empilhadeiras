@@ -84,7 +84,7 @@
 }
 
 .filtro-categoria-btn.ativo {
-  color: var(--cor-primaria);
+  color: var(--cor-primaria-escura);
   background-color: rgba(212, 160, 23, 0.1);
 }
 
@@ -102,7 +102,7 @@
   font-weight: 500;
   font-family: var(--fonte-principal);
   background-color: var(--cor-fundo);
-  color: var(--cor-texto);
+  color: var(--cor-texto-claro);
   cursor: pointer;
   outline: none;
   transition: all 0.2s;

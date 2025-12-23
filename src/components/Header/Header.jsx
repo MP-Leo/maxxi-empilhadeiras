@@ -1,41 +1,41 @@
-import { Link, useLocation } from 'react-router-dom'
 import './Header.css'
 
-function Header({ contato }) {
-  const location = useLocation()
-
+function Header({ contato, paginaAtual, onNavigate }) {
   return (
     <header className="header">
       <div className="header-container">
-        <Link to="/" className="header-logo">
+        <button 
+          className="header-logo"
+          onClick={() => onNavigate('home')}
+        >
           <span className="logo-icon">⚙️</span>
           <div className="logo-text">
             <h1>{contato.nome}</h1>
             <span className="logo-slogan">{contato.slogan}</span>
           </div>
-        </Link>
+        </button>
 
         <nav className="header-nav">
-          <Link 
-            to="/" 
-            className={`nav-link ${location.pathname === '/' ? 'ativo' : ''}`}
+          <button 
+            className={`nav-link ${paginaAtual === 'home' ? 'ativo' : ''}`}
+            onClick={() => onNavigate('home')}
           >
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
               <polyline points="9 22 9 12 15 12 15 22"/>
             </svg>
             Empresa
-          </Link>
-          <Link 
-            to="/produtos" 
-            className={`nav-link ${location.pathname === '/produtos' ? 'ativo' : ''}`}
+          </button>
+          <button 
+            className={`nav-link ${paginaAtual === 'produtos' ? 'ativo' : ''}`}
+            onClick={() => onNavigate('produtos')}
           >
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
               <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
             </svg>
             Produtos
-          </Link>
+          </button>
           <a 
             href={`https://wa.me/${contato.whatsapp}`}
             target="_blank"
