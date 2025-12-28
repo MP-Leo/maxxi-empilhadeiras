@@ -49,10 +49,6 @@ function Footer({ contato }) {
           <p>{contato.endereco}</p>
         </div>
       </div>
-
-      <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} {contato.nome}. Todos os direitos reservados.</p>
-      </div>
     </footer>
   )
 }

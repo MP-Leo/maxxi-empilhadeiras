@@ -8,7 +8,6 @@ function Header({ contato, paginaAtual, onNavigate }) {
           className="header-logo"
           onClick={() => onNavigate('home')}
         >
-          <span className="logo-icon">⚙️</span>
           <div className="logo-text">
             <h1>{contato.nome}</h1>
             <span className="logo-slogan">{contato.slogan}</span>

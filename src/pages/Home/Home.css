@@ -147,6 +147,74 @@
 }
 
 /* ===================================
+   HOME - LOCALIZAÇÃO
+   =================================== */
+
+.localizacao {
+  padding: 4rem 2rem;
+  background-color: var(--cor-card);
+}
+
+.localizacao-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.localizacao-info h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  color: var(--cor-texto);
+  letter-spacing: -0.02em;
+}
+
+.localizacao-endereco {
+  font-size: 1.05rem;
+  color: var(--cor-texto-claro);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.localizacao-contatos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.localizacao-contatos a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--cor-texto-claro);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.localizacao-contatos a:hover {
+  color: var(--cor-primaria);
+}
+
+.localizacao-contatos svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.localizacao-mapa {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.localizacao-mapa iframe {
+  display: block;
+}
+
+/* ===================================
    RESPONSIVIDADE
    =================================== */
 
@@ -175,4 +243,22 @@
   .info-card {
     padding: 1rem;
   }
+
+  .localizacao {
+    padding: 3rem 1.5rem;
+  }
+
+  .localizacao-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .localizacao-info {
+    text-align: center;
+  }
+
+  .localizacao-contatos {
+    align-items: center;
+  }
 }
+

@@ -14,8 +14,8 @@
 
 .modal-conteudo {
   background-color: var(--cor-card);
-  border-radius: var(--radius-lg);
-  max-width: 700px;
+  border-radius: 16px;
+  max-width: 600px;
   width: 100%;
   max-height: 90vh;
   overflow-y: auto;
@@ -28,9 +28,9 @@
   right: 1rem;
   width: 36px;
   height: 36px;
-  border: 1.5px solid var(--cor-borda);
+  border: none;
   border-radius: 50%;
-  background-color: var(--cor-card);
+  background-color: rgba(255, 255, 255, 0.9);
   cursor: pointer;
   font-size: 1.3rem;
   color: var(--cor-texto);
@@ -39,18 +39,18 @@
   justify-content: center;
   transition: all 0.2s;
   z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .modal-fechar:hover {
-  background-color: var(--cor-fundo);
-  border-color: var(--cor-texto-claro);
+  background-color: white;
+  transform: scale(1.05);
 }
 
 .modal-imagem {
   width: 100%;
-  height: 350px;
+  height: 300px;
   object-fit: cover;
-  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
 }
 
 .modal-info {
@@ -59,36 +59,27 @@
 
 .modal-header {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
+  justify-content: space-between;
   gap: 1rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .modal-header h2 {
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: var(--cor-texto);
   letter-spacing: -0.02em;
 }
 
-.modal-preco {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--cor-primaria);
-  white-space: nowrap;
-}
-
 .modal-categoria {
-  display: inline-flex;
-  align-items: center;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  padding: 0.4rem 0.8rem;
+  padding: 0.35rem 0.7rem;
   background-color: rgba(212, 160, 23, 0.1);
   border-radius: 6px;
   color: var(--cor-primaria);
-  margin-bottom: 1rem;
+  white-space: nowrap;
 }
 
 .modal-descricao {
@@ -99,36 +90,77 @@
 }
 
 .modal-detalhes {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--cor-texto-claro);
   margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+/* ===================================
+   CTA - CALL TO ACTION
+   =================================== */
+
+.modal-cta {
+  text-align: center;
+}
+
+.modal-cta-texto {
+  font-size: 0.9rem;
+  color: var(--cor-texto-claro);
+  margin-bottom: 1rem;
 }
 
 .modal-btn-whatsapp {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  width: fit-content;
-  padding: 0.85rem 2.5rem;
-  margin: 0 auto;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 1rem 2rem;
   background-color: var(--cor-whatsapp);
   color: white;
   text-decoration: none;
-  border-radius: var(--radius-md);
-  font-size: 0.95rem;
+  border-radius: 10px;
+  font-size: 1rem;
   font-weight: 600;
-  border: 1.5px solid var(--cor-whatsapp);
   transition: all 0.2s;
 }
 
 .modal-btn-whatsapp:hover {
   background-color: #1fb855;
-  border-color: #1fb855;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
 }
 
 .modal-btn-whatsapp svg {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
+}
+
+/* ===================================
+   RESPONSIVIDADE
+   =================================== */
+
+@media (max-width: 768px) {
+  .modal-overlay {
+    padding: 1rem;
+  }
+
+  .modal-imagem {
+    height: 220px;
+  }
+
+  .modal-info {
+    padding: 1.25rem;
+  }
+
+  .modal-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .modal-header h2 {
+    font-size: 1.15rem;
+  }
 }
