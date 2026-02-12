@@ -5,7 +5,7 @@
 .hero {
   padding: 5rem 2rem;
   text-align: center;
-  background-color: var(--cor-card);
+  background-color: var(--cor-fundo);
 }
 
 .hero-content {
@@ -78,7 +78,7 @@
 
 .sobre {
   padding: 4rem 2rem;
-  background-color: var(--cor-fundo);
+  background-color: var(--cor-card);
 }
 
 .sobre-container {

@@ -1,77 +1,105 @@
 /* ===================================
-   PRODUTO CARD - MINIMALISTA
+   CARD CONTAINER
    =================================== */
 
-.produto-card {
-  background-color: var(--cor-card);
+.product-card {
+  background: #fff;
   border-radius: 12px;
-  overflow: hidden;
-  transition: transform 0.2s, box-shadow 0.2s;
-  border: 1px solid var(--cor-borda);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  flex: 0 1 320px;
+  max-width: 320px;
   display: flex;
   flex-direction: column;
-  cursor: pointer;
+  height: auto;
+  min-height: 420px;
 }
 
-.produto-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  border-color: #ddd;
 }
 
 /* ===================================
-   IMAGEM COM BADGE
+   ÁREA DA IMAGEM
    =================================== */
 
-.produto-imagem-container {
-  position: relative;
-}
-
-.produto-card img {
+.card-image-container {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
-  display: block;
+  height: 220px;
+  padding: 1.5rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #f7f7f7;
 }
 
-.produto-categoria {
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
-  font-size: 0.7rem;
-  font-weight: 600;
-  padding: 0.35rem 0.75rem;
-  background-color: rgba(0, 0, 0, 0.75);
-  border-radius: 6px;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
+.card-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .card-image {
+  transform: scale(1.05);
 }
 
 /* ===================================
-   INFO DO PRODUTO
+   CONTEÚDO E TIPOGRAFIA
    =================================== */
 
-.produto-info {
-  padding: 1rem;
+.card-content {
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  text-align: center;
 }
 
-.produto-info h3 {
-  font-size: 0.95rem;
-  font-weight: 600;
-  margin-bottom: 0.4rem;
-  color: var(--cor-texto);
-  letter-spacing: -0.01em;
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 0.8rem;
+  min-height: 2.4rem;
 }
 
-.produto-info p {
-  font-size: 0.8rem;
-  color: var(--cor-texto-claro);
+.card-description {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  line-height: 1.5;
+}
+
+/* ===================================
+   BOTÃO DE AÇÃO
+   =================================== */
+
+.card-button {
+  margin-top: auto;
+  align-self: center;
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #333;
+  padding: 0.6rem 1.8rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
+.product-card:hover .card-button {
+  background-color: #333;
+  color: #fff;
 }

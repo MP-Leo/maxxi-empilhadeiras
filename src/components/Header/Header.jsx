@@ -1,6 +1,7 @@
 import './Header.css'
 
-function Header({ contato, paginaAtual, onNavigate }) {
+// Recebemos novos props: busca e aoBuscar
+function Header({ contato, paginaAtual, onNavigate, busca, aoBuscar }) {
   return (
     <header className="header">
       <div className="header-container">
@@ -13,6 +14,20 @@ function Header({ contato, paginaAtual, onNavigate }) {
             <span className="logo-slogan">{contato.slogan}</span>
           </div>
         </button>
+
+        {/* --- NOVO: BARRA DE BUSCA --- */}
+        {/* Só aparece se estiver na página de produtos */}
+        {paginaAtual === 'produtos' && (
+           <div className="header-search-container">
+             <input
+               type="text"
+               placeholder="Buscar produtos..."
+               value={busca}
+               onChange={(e) => aoBuscar(e.target.value)}
+               className="header-search-input"
+             />
+           </div>
+        )}
 
         <nav className="header-nav">
           <button 

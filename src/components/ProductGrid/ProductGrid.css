@@ -1,12 +1,20 @@
+/* ===================================
+   CONTAINER PRINCIPAL
+   =================================== */
+
 .produtos-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 1.5rem;
-  flex-grow: 1;
+  padding: 3rem 1rem;
 }
 
-.produtos-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+/* ===================================
+   GRID FLEXÍVEL
+   =================================== */
+
+.produtos-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }

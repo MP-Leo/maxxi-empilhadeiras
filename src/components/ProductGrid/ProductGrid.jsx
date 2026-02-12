@@ -1,25 +1,20 @@
-import ProductCard from '../ProductCard/ProductCard'
-import Pagination from '../Pagination/Pagination'
-import './ProductGrid.css'
+import React from 'react';
+import ProductCard from '../ProductCard/ProductCard';
+import './ProductGrid.css';
 
-function ProductGrid({ produtos, paginaAtual, totalPaginas, onPageChange, onProductClick }) {
+function ProductGrid({ produtos, onProductClick }) {
+
   return (
     <main className="produtos-container">
-      <div className="produtos-grid">
+      <div className="produtos-flex">
         {produtos.map(produto => (
           <ProductCard 
-            key={produto.id}
+            key={produto.id || produto.nome}
             produto={produto}
-            onClick={() => onProductClick(produto)}
+            onClick={onProductClick}
           />
         ))}
       </div>
-
-      <Pagination 
-        paginaAtual={paginaAtual}
-        totalPaginas={totalPaginas}
-        onPageChange={onPageChange}
-      />
     </main>
   )
 }

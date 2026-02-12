@@ -1,18 +1,29 @@
-import './ProductCard.css'
+import React from 'react';
+import './ProductCard.css';
 
-function ProductCard({ produto, onClick }) {
+const ProductCard = ({ produto, onClick }) => {
   return (
-    <div className="produto-card" onClick={onClick}>
-      <div className="produto-imagem-container">
-        <img src={produto.imagem} alt={produto.nome} />
-        <span className="produto-categoria">{produto.categoria}</span>
+    <div className="product-card" onClick={() => onClick(produto)}>
+      <div className="card-image-container">
+        <img 
+          src={produto.imagem} 
+          alt={produto.nome} 
+          className="card-image"
+          loading="lazy" 
+        />
       </div>
-      <div className="produto-info">
-        <h3>{produto.nome}</h3>
-        <p>{produto.descricao}</p>
+      
+      <div className="card-content">
+        <h3 className="card-title">{produto.nome}</h3>
+        <p className="card-description">
+          {produto.descricao}
+        </p>
+        <button className="card-button">
+          Saber mais
+        </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProductCard
+export default ProductCard;

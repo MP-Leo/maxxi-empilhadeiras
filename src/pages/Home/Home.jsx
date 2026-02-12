@@ -12,8 +12,7 @@ function Home({ contato }) {
 
                     <div className="hero-descricao">
                         <p>
-                            Especialistas em empilhadeiras das melhores marcas do mercado.
-                            Vendas, locação e assistência técnica com a qualidade que sua operação merece.
+                            Somos uma empresa de Passo Fundo/RS, atuando desde 2015 no mercado de movimentação de cargas.
                         </p>
                     </div>
 
@@ -36,13 +35,11 @@ function Home({ contato }) {
                 <div className="sobre-container">
                     <h2>Sobre Nós</h2>
                     <p>
-                        Com anos de experiência no mercado de movimentação de cargas,
-                        nos consolidamos como referência em soluções para logística e armazenagem.
+                        Trabalhamos com a locação e venda de máquinas novas e usadas, oferecendo soluções eficientes e confiáveis para nossos clientes. 
                     </p>
                     <p>
-                        Trabalhamos com as principais marcas: <strong>Toyota, Hyster, Yale,
-                            Clark, Still e BYD</strong> — equipamentos novos e seminovos com
-                        garantia e procedência.
+                        Atuamos com empilhadeiras a diesel e elétricas, transpaleteiras e paleteiras manuais, empilhadeiras retráteis, 
+                        sempre com equipamentos multimarcas e foco em qualidade, segurança e bom atendimento.
                     </p>
                 </div>
             </section>
@@ -71,8 +68,7 @@ function Home({ contato }) {
                     </div>
                     <div className="localizacao-mapa">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3513.958571773214!2d-52.441686!3d-28.269272999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e2c0aa25865493%3A0x536c05e7622a9172!2sMaxxi%20Empilhadeiras!5e0!3m2!1spt-BR!2sbr!4v1766928857140!5m2!1spt-BR!2sbr"
-                            width="220%"
+                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d439.2474722490784!2d-52.415149!3d-28.26863!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1770895283979!5m2!1spt-BR!2sbr://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d219.62373621020112!2d-52.415149160892454!3d-28.268629958441476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1770895195327!5m2!1spt-BR!2sbr" width="100%"
                             height="450"
                             style={{ border: 0, borderRadius: '12px' }}
                             allowFullScreen=""

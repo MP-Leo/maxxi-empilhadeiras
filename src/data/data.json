@@ -1,149 +1,44 @@
 {
   "contato": {
-    "nome": "Empilha Máquinas",
+    "nome": "Maxxi Empilhadeiras",
     "slogan": "Soluções em movimentação de cargas",
-    "whatsapp": "5511999999999",
-    "telefone": "(11) 99999-9999",
+    "whatsapp": "5554991580756",
+    "telefone": "(54) 9 9158-0756;",
     "email": "contato@empilhamaquinas.com.br",
     "instagram": "@empilhamaquinas",
-    "endereco": "Av. Industrial, 1500 - São Paulo/SP"
+    "endereco": "Rua General Osório, nº 2135, Centro - Passo Fundo"
   },
   "categorias": ["Todas", "Toyota", "Hyster", "Yale", "Clark", "Still", "BYD"],
   "produtos": [
     {
       "id": 1,
-      "nome": "Empilhadeira Toyota 8FG25",
-      "descricao": "Empilhadeira a combustão, capacidade 2.500kg. Motor Toyota 4Y, transmissão automática, torre triplex.",
-      "preco": 89000,
-      "categoria": "Toyota",
-      "ano": 2022,
-      "imagem": "https://images.unsplash.com/photo-1601598851547-4302969d0614?w=600&h=400&fit=crop"
+      "nome": "Empilhadeira Diesel",
+      "descricao": "A partir de 3 ton, com torre simples e triplex de até 6 metros. Máquina Compacta",
+      "imagem": "/img/empilhadeira-diesel.png"
     },
     {
       "id": 2,
-      "nome": "Empilhadeira Toyota 8FBE18",
-      "descricao": "Empilhadeira elétrica, capacidade 1.800kg. Bateria 48V, operação silenciosa, ideal para ambientes internos.",
-      "preco": 125000,
-      "categoria": "Toyota",
-      "ano": 2023,
-      "imagem": "https://images.unsplash.com/photo-1620472926310-45892389b4d4?w=600&h=400&fit=crop"
+      "nome": "Empilhadeira Elétrica",
+      "descricao": "Bateria à lítio com tempo de operação de 8 horas e recarga total em 2 horas. 3 ton e compacta.",
+      "imagem": "/img/empilhadeira-eletrica.png"
     },
     {
       "id": 3,
-      "nome": "Empilhadeira Toyota 8FG30",
-      "descricao": "Capacidade 3.000kg, motor a GLP, torre duplex com deslocador lateral. Alta performance.",
-      "preco": 115000,
-      "categoria": "Toyota",
-      "ano": 2021,
-      "imagem": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=600&h=400&fit=crop"
+      "nome": "Empilhadeira Elétrica Patolada Embarcada",
+      "descricao": "",
+      "imagem": "/img/empilhadeira-patolada.png"
     },
     {
       "id": 4,
-      "nome": "Empilhadeira Hyster H50FT",
-      "descricao": "Capacidade 2.500kg, motor Mazda a GLP, transmissão powershift. Robusta e confiável.",
-      "preco": 78000,
-      "categoria": "Hyster",
-      "ano": 2020,
-      "imagem": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=400&fit=crop"
+      "nome": "Paleteira Elétrica",
+      "descricao": "Com e sem torre.",
+      "imagem": "/img/paleteira-eletrica.png"
     },
     {
       "id": 5,
-      "nome": "Empilhadeira Hyster H70FT",
+      "nome": "Paleteira Hidráulica",
       "descricao": "Capacidade 3.200kg, motor diesel Yanmar. Ideal para operações pesadas e pátios externos.",
-      "preco": 135000,
-      "categoria": "Hyster",
-      "ano": 2022,
-      "imagem": "https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=400&fit=crop"
-    },
-    {
-      "id": 6,
-      "nome": "Empilhadeira Hyster E50XN",
-      "descricao": "Elétrica, capacidade 2.250kg. Bateria 80V, alta eficiência energética, zero emissões.",
-      "preco": 145000,
-      "categoria": "Hyster",
-      "ano": 2023,
-      "imagem": "https://images.unsplash.com/photo-1590247813693-5541d1c609fd?w=600&h=400&fit=crop"
-    },
-    {
-      "id": 7,
-      "nome": "Empilhadeira Yale GLP25VX",
-      "descricao": "Capacidade 2.500kg, motor a GLP, cabine fechada com ar-condicionado. Conforto operacional.",
-      "preco": 95000,
-      "categoria": "Yale",
-      "ano": 2021,
-      "imagem": "https://images.unsplash.com/photo-1567449303078-57ad995bd329?w=600&h=400&fit=crop"
-    },
-    {
-      "id": 8,
-      "nome": "Empilhadeira Yale ERP18VF",
-      "descricao": "Elétrica retrátil, capacidade 1.800kg. Ideal para corredores estreitos, mastro de 9 metros.",
-      "preco": 168000,
-      "categoria": "Yale",
-      "ano": 2022,
-      "imagem": "https://images.unsplash.com/photo-1565891741441-64926e441838?w=600&h=400&fit=crop"
-    },
-    {
-      "id": 9,
-      "nome": "Empilhadeira Yale GDP35VX",
-      "descricao": "Diesel, capacidade 3.500kg. Motor Perkins, chassis reforçado para cargas pesadas.",
-      "preco": 142000,
-      "categoria": "Yale",
-      "ano": 2020,
-      "imagem": "https://images.unsplash.com/photo-1622905810727-9cc3126d712e?w=600&h=400&fit=crop"
-    },
-    {
-      "id": 10,
-      "nome": "Empilhadeira Clark C25",
-      "descricao": "Capacidade 2.500kg, motor a GLP. Design compacto, excelente visibilidade, fácil manutenção.",
-      "preco": 72000,
-      "categoria": "Clark",
-      "ano": 2021,
-      "imagem": "https://images.unsplash.com/photo-1580901368919-7738efb0f87e?w=600&h=400&fit=crop"
-    },
-    {
-      "id": 11,
-      "nome": "Empilhadeira Clark C30D",
-      "descricao": "Diesel, capacidade 3.000kg. Motor Kubota, transmissão robusta, ideal para uso intensivo.",
-      "preco": 98000,
-      "categoria": "Clark",
-      "ano": 2022,
-      "imagem": "https://images.unsplash.com/photo-1605732562742-3023a888e56e?w=600&h=400&fit=crop"
-    },
-    {
-      "id": 12,
-      "nome": "Empilhadeira Still RX20-16",
-      "descricao": "Elétrica, capacidade 1.600kg. Tecnologia alemã, baixo consumo, controle preciso.",
-      "preco": 138000,
-      "categoria": "Still",
-      "ano": 2023,
-      "imagem": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=400&fit=crop"
-    },
-    {
-      "id": 13,
-      "nome": "Empilhadeira Still RX70-25",
-      "descricao": "Híbrida diesel-elétrica, capacidade 2.500kg. Economia de combustível, baixa emissão.",
-      "preco": 175000,
-      "categoria": "Still",
-      "ano": 2022,
-      "imagem": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop"
-    },
-    {
-      "id": 14,
-      "nome": "Empilhadeira BYD ECB18",
-      "descricao": "100% elétrica, capacidade 1.800kg. Bateria de lítio, carregamento rápido, zero manutenção de bateria.",
-      "preco": 158000,
-      "categoria": "BYD",
-      "ano": 2023,
-      "imagem": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop"
-    },
-    {
-      "id": 15,
-      "nome": "Empilhadeira BYD ECB25",
-      "descricao": "Elétrica com bateria de lítio, capacidade 2.500kg. Autonomia de 8 horas, carregamento em 1,5h.",
-      "preco": 185000,
-      "categoria": "BYD",
-      "ano": 2023,
-      "imagem": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&h=400&fit=crop"
+      "imagem": "/img/paleteira-hidraulica.png"
     }
   ]
 }
