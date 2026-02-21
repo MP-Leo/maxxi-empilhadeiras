@@ -13,31 +13,31 @@
       "id": 1,
       "nome": "Empilhadeira Diesel",
       "descricao": "A partir de 3 ton, com torre simples e triplex de até 6 metros. Máquina Compacta",
-      "imagem": "/img/empilhadeira-diesel.png"
+      "imagem": "./img/empilhadeira-diesel.png"
     },
     {
       "id": 2,
       "nome": "Empilhadeira Elétrica",
       "descricao": "Bateria à lítio com tempo de operação de 8 horas e recarga total em 2 horas. 3 ton e compacta.",
-      "imagem": "/img/empilhadeira-eletrica.png"
+      "imagem": "./img/empilhadeira-eletrica.png"
     },
     {
       "id": 3,
       "nome": "Empilhadeira Elétrica Patolada Embarcada",
       "descricao": "Capacidade 3.200kg, motor diesel Yanmar. Ideal para operações pesadas e pátios externos.",
-      "imagem": "/img/empilhadeira-patolada.png"
+      "imagem": "./img/empilhadeira-patolada.png"
     },
     {
       "id": 4,
       "nome": "Paleteira Elétrica",
       "descricao": "Com e sem torre.",
-      "imagem": "/img/paleteira-eletrica.png"
+      "imagem": "./img/paleteira-eletrica.png"
     },
     {
       "id": 5,
       "nome": "Paleteira Hidráulica",
       "descricao": "",
-      "imagem": "/img/paleteira-hidraulica.png"
+      "imagem": "./img/paleteira-hidraulica.png"
     }
   ]
 }
