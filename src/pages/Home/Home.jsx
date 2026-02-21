@@ -1,23 +1,28 @@
+import React from 'react'
 import './Home.css'
 
 function Home({ contato }) {
+    // Limpa o número do WhatsApp para o link não quebrar
+    const whatsappLimpo = contato.whatsapp ? contato.whatsapp.replace(/\D/g, '') : '';
+
     return (
         <div className="home">
-            {/* Hero Section */}
-            <section className="hero">
-                <div className="hero-content">
+            
+            {/* ===================================
+                HERO SECTION (Background Imersivo)
+                =================================== */}
+            <section className="hero-imersivo">
+                <div className="hero-imersivo-content">
                     <p className="hero-subtitulo">Bem-vindo à</p>
                     <h1>{contato.nome}</h1>
-                    <p className="hero-slogan">{contato.slogan}</p>
+                    <h2 className="hero-slogan">{contato.slogan}</h2>
 
-                    <div className="hero-descricao">
-                        <p>
-                            Somos uma empresa de Passo Fundo/RS, atuando desde 2015 no mercado de movimentação de cargas.
-                        </p>
-                    </div>
+                    <p className="hero-descricao">
+                        Somos uma empresa de Passo Fundo/RS, atuando desde 2015 no mercado de movimentação de cargas, oferecendo soluções eficientes e confiáveis.
+                    </p>
 
-
-                    <a href={`https://wa.me/${contato.whatsapp}?text=Olá! Gostaria de mais informações.`}
+                    <a 
+                        href={`https://wa.me/${whatsappLimpo}?text=Olá! Gostaria de mais informações sobre locação e vendas.`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn-whatsapp-hero"
@@ -30,7 +35,9 @@ function Home({ contato }) {
                 </div>
             </section>
 
-            {/* Sobre Section */}
+            {/* ===================================
+                SOBRE NÓS SECTION
+                =================================== */}
             <section className="sobre">
                 <div className="sobre-container">
                     <h2>Sobre Nós</h2>
@@ -44,7 +51,9 @@ function Home({ contato }) {
                 </div>
             </section>
 
-            {/* Localização Section */}
+            {/* ===================================
+                LOCALIZAÇÃO SECTION
+                =================================== */}
             <section className="localizacao">
                 <div className="localizacao-container">
                     <div className="localizacao-info">

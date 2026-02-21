@@ -1,19 +1,22 @@
 /* ===================================
-   HEADER - MELHORADO E MAIOR
+   HEADER - SÓLIDO, LIMPO E NATURAL
    =================================== */
 .header {
-  background-color: var(--cor-card);
-  padding: 0;
+  background-color: rgb(255, 255, 255); /* Branco puro e sólido */
   position: sticky;
   top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+  width: 100%;
+  /* O capricho: Uma borda levíssima e uma sombra quase invisível só para separar do fundo escuro */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04); 
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.03); 
+  transition: all 0.3s ease;
 }
 
 .header-container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 1.5rem 2rem;
+  padding: 1.2rem 2rem; /* Espaçamento generoso (respiro) */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,7 +24,7 @@
 }
 
 /* ===================================
-   LOGO
+   LOGO 
    =================================== */
 .header-logo {
   display: flex;
@@ -41,123 +44,226 @@
 
 .logo-text h1 {
   font-size: 1.6rem;
-  font-weight: 700;
-  color: var(--cor-texto);
-  line-height: 1.2;
-  letter-spacing: -0.03em;
+  font-weight: 800;
+  color: #1a1a1a; /* Quase preto, muito mais elegante que preto puro */
+  line-height: 1.1;
+  letter-spacing: -0.02em;
   transition: color 0.2s;
 }
 
 .logo-slogan {
   font-size: 0.8rem;
-  color: var(--cor-texto-claro);
-  font-weight: 400;
-  letter-spacing: 0.01em;
+  color: #718096; /* Cinza médio sofisticado */
+  font-weight: 500;
+  letter-spacing: 0.02em;
   margin-top: 0.2rem;
 }
 
 .header-logo:hover .logo-text h1 {
-  color: var(--cor-primaria);
+  color: #d4a017; /* Dourado/Amarelo no hover */
 }
 
 /* ===================================
-   BARRA DE BUSCA - NOVA E MELHORADA
-   =================================== */
-
-.header-search-container {
-  flex-grow: 1;
-  max-width: 500px;
-  position: relative;
-}
-
-.header-search-input {
-  width: 100%;
-  padding: 0.75rem 1.25rem;
-  font-size: 0.95rem;
-  border: 2px solid var(--cor-borda);
-  border-radius: 10px;
-  background-color: var(--cor-fundo);
-  color: var(--cor-texto);
-  transition: all 0.2s;
-  font-family: var(--fonte-principal);
-}
-
-.header-search-input:focus {
-  outline: none;
-  border-color: var(--cor-primaria);
-  background-color: white;
-  box-shadow: 0 0 0 3px rgba(212, 160, 23, 0.1);
-}
-
-.header-search-input::placeholder {
-  color: var(--cor-texto-claro);
-}
-
-/* ===================================
-   NAVEGAÇÃO
+   NAVEGAÇÃO - VISUAL LIMPO E NATURAL
    =================================== */
 .header-nav {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1.8rem; /* Distância confortável entre os itens */
   flex-shrink: 0;
 }
 
-.nav-link {
+/* Links normais (Empresa, Produtos) sem blocos de fundo */
+.nav-link-clean {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.75rem 1.2rem;
-  text-decoration: none;
-  color: var(--cor-texto-claro);
-  font-size: 0.95rem;
-  font-weight: 500;
-  border-radius: 8px;
-  transition: all 0.2s;
-  background-color: transparent;
+  padding: 0.5rem 0; /* Tiramos o padding lateral para ficar natural */
+  background: transparent;
   border: none;
+  color: #4a5568; /* Cinza chumbo escuro */
+  font-size: 0.95rem;
+  font-weight: 600;
   cursor: pointer;
-  font-family: var(--fonte-principal);
-  white-space: nowrap;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
-.nav-link svg {
-  width: 20px; /* Aumentado de 18px */
+.nav-link-clean svg {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2.2; /* Deixa o ícone um pouco mais gordinho/sólido */
+  transition: transform 0.3s;
+}
+
+/* Efeito natural ao passar o mouse */
+.nav-link-clean:hover {
+  color: #1a1a1a;
+}
+
+/* Sublinhado elegante no hover/ativo em vez de blocos quadrados */
+.nav-link-clean::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #d4a017; /* A cor principal da sua marca */
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.nav-link-clean:hover::after,
+.nav-link-clean.ativo::after {
+  width: 100%;
+}
+
+.nav-link-clean.ativo {
+  color: #1a1a1a;
+}
+
+/* Divisória sutil */
+.nav-divider {
+  width: 1px;
   height: 20px;
-  flex-shrink: 0;
-}
-
-.nav-link:hover {
-  color: var(--cor-texto);
-  background-color: var(--cor-fundo);
-}
-
-.nav-link.ativo {
-  color: var(--cor-primaria-escura);
-  background-color: rgba(212, 160, 23, 0.1);
+  background-color: #e2e8f0;
+  margin: 0 0.5rem;
 }
 
 /* ===================================
-   BOTÃO WHATSAPP NO HEADER
+   BOTÃO DE CONTATO CTA
    =================================== */
-.nav-whatsapp {
-  color: var(--cor-whatsapp);
-  background-color: rgba(37, 211, 102, 0.1);
-  margin-left: 0.5rem;
-}
-
-.nav-whatsapp:hover {
+.nav-btn-destaque {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #25d366; 
   color: white;
-  background-color: var(--cor-whatsapp);
+  padding: 0.7rem 1.6rem;
+  border-radius: 8px; /* Cantos levemente arredondados, natural e corporativo */
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
 }
 
-.nav-whatsapp svg {
+.nav-btn-destaque svg {
   width: 18px;
   height: 18px;
 }
 
+.nav-btn-destaque:hover {
+  background-color: #1ebc57;
+  transform: translateY(-2px); /* Elevação sutil */
+  box-shadow: 0 6px 15px rgba(37, 211, 102, 0.25);
+}
+
 /* ===================================
-   RESPONSIVIDADE
+   NAVEGAÇÃO - VISUAL LIMPO (NOVO)
+   =================================== */
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* Mais espaço entre os botões para respirar */
+  flex-shrink: 0;
+}
+
+/* Botões normais (Empresa, Produtos) */
+.nav-link-clean {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  color: var(--cor-texto-claro);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link-clean svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.nav-link-clean:hover {
+  color: var(--cor-texto);
+}
+
+.nav-link-clean:hover svg {
+  transform: translateY(-2px);
+}
+
+/* A linha dourada embaixo do link ativo ou no hover (Capricho) */
+.nav-link-clean::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--cor-primaria);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.nav-link-clean:hover::after,
+.nav-link-clean.ativo::after {
+  width: 80%;
+}
+
+.nav-link-clean.ativo {
+  color: var(--cor-texto);
+}
+
+/* Divisória */
+.nav-divider {
+  width: 1px;
+  height: 24px;
+  background-color: var(--cor-borda);
+  margin: 0 0.5rem;
+}
+
+/* ===================================
+   BOTÃO DE CONTATO CTA (NOVO)
+   =================================== */
+.nav-btn-destaque {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--cor-whatsapp);
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(37, 211, 102, 0.2);
+}
+
+.nav-btn-destaque svg {
+  width: 20px;
+  height: 20px;
+}
+
+.nav-btn-destaque:hover {
+  background-color: #1ebc57;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(37, 211, 102, 0.35);
+  color: white;
+}
+
+/* ===================================
+   RESPONSIVIDADE (MOBILE)
    =================================== */
 @media (max-width: 1024px) {
   .header-container {
@@ -175,46 +281,36 @@
 @media (max-width: 768px) {
   .header-container {
     padding: 1rem;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .header-logo {
+    align-items: center;
+    justify-content: center;
   }
   
-  .logo-text h1 {
-    font-size: 1.2rem;
+  .logo-text {
+    align-items: center;
   }
-  
-  .logo-slogan {
-    font-size: 0.7rem;
+
+  .header-nav {
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
   }
-  
-  .nav-link {
-    padding: 0.6rem 0.85rem;
-    font-size: 0.85rem;
+
+  .nav-divider {
+    display: none; /* Esconde a divisória no celular */
   }
-  
-  .nav-link span {
+
+  /* No celular, os textos dos links somem e ficam só os ícones */
+  .nav-link-clean span {
     display: none;
   }
   
-  .nav-link svg {
+  .nav-link-clean svg {
     width: 22px;
     height: 22px;
-  }
-  
-  .header-search-input {
-    padding: 0.65rem 1rem;
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .header-container {
-    padding: 0.8rem;
-  }
-  
-  .logo-slogan {
-    display: none;
-  }
-  
-  .nav-link {
-    padding: 0.5rem;
   }
 }
