@@ -4,8 +4,7 @@
     "slogan": "Soluções em movimentação de cargas",
     "whatsapp": "5554991580756",
     "telefone": "(54) 9 9158-0756;",
-    "email": "contato@empilhamaquinas.com.br",
-    "instagram": "@empilhamaquinas",
+    "email": "maxxi.empilhadeiras@hotmail.com",
     "endereco": "Rua General Osório, nº 2135, Centro - Passo Fundo"
   },
   "categorias": ["Todas", "Toyota", "Hyster", "Yale", "Clark", "Still", "BYD"],
@@ -25,7 +24,7 @@
     {
       "id": 3,
       "nome": "Empilhadeira Elétrica Patolada Embarcada",
-      "descricao": "",
+      "descricao": "Capacidade 3.200kg, motor diesel Yanmar. Ideal para operações pesadas e pátios externos.",
       "imagem": "/img/empilhadeira-patolada.png"
     },
     {
@@ -37,7 +36,7 @@
     {
       "id": 5,
       "nome": "Paleteira Hidráulica",
-      "descricao": "Capacidade 3.200kg, motor diesel Yanmar. Ideal para operações pesadas e pátios externos.",
+      "descricao": "",
       "imagem": "/img/paleteira-hidraulica.png"
     }
   ]

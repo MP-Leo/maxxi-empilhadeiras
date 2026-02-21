@@ -30,7 +30,7 @@ function App() {
         
         {paginaAtual === 'produtos' && (
           <Products 
-            contato={contato} 
+            contato={contato.whatsapp} 
             categorias={categorias} 
             produtos={produtos} 
           />

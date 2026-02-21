@@ -20,6 +20,16 @@ const Modal = ({ produto, contato, onClose }) => {
     }
   }
 
+  // 1. Monta a mensagem (com o nome em negrito usando os asteriscos)
+  const mensagem = `Olá! Tenho interesse no produto: *${produto.nome}*`;
+  
+  // 2. Codifica a mensagem para remover espaços e caracteres que quebram a URL
+  const mensagemCodificada = encodeURIComponent(mensagem);
+
+  // 3. Monta o link final (certifique-se que 'contato' é apenas números, ex: 5554991580756)
+  const linkWhatsapp = `https://wa.me/${contato}?text=${mensagemCodificada}`;
+  // ------------------------------------------
+
   return (
     <div className="modal-overlay" onClick={handleOverlayClick}>
       <div className="modal-conteudo">
@@ -57,7 +67,6 @@ const Modal = ({ produto, contato, onClose }) => {
                 <strong>Ano:</strong> {produto.ano}
               </p>
             )}
-            {/* Adicione outros campos opcionais aqui da mesma forma */}
           </div>
 
           {/* CTA WhatsApp */}
@@ -65,8 +74,10 @@ const Modal = ({ produto, contato, onClose }) => {
             <p className="modal-cta-texto">
               Interessado? Entre em contato para consultar valores e condições.
             </p>
+            
+            {/* Link atualizado usando a variável que criamos */}
             <a 
-              href={`https://wa.me/${contato}?text=Olá! Tenho interesse no produto: ${produto.nome}`}
+              href={linkWhatsapp}
               target="_blank" 
               rel="noopener noreferrer"
               className="modal-btn-whatsapp"

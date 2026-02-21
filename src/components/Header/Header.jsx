@@ -17,7 +17,7 @@ function Header({ contato, paginaAtual, onNavigate, busca, aoBuscar }) {
 
         {/* --- NOVO: BARRA DE BUSCA --- */}
         {/* Só aparece se estiver na página de produtos */}
-        {paginaAtual === 'produtos' && (
+        {/* {paginaAtual === 'produtos' && (
            <div className="header-search-container">
              <input
                type="text"
@@ -27,7 +27,7 @@ function Header({ contato, paginaAtual, onNavigate, busca, aoBuscar }) {
                className="header-search-input"
              />
            </div>
-        )}
+        )} */}
 
         <nav className="header-nav">
           <button 
