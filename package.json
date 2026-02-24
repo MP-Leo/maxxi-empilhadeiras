@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://MP-Leo.github.io/maxxi-empilhadeiras",
+  "homepage": "https://www.maxxiempilhadeiras.com.br",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
